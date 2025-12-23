@@ -134,10 +134,9 @@ header.scrolled {
 
 .logo-container .mobile-logo {
     display: none;
-}
-
-.logo-container .logo:hover {
-    transform: scale(1.05);
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
 }
 
 .nav-links {
@@ -1025,14 +1024,17 @@ footer {
     }
 }
 
-/* Mobile */
+/* Mobile Navbar Styling */
 @media (max-width: 768px) {
-    :root {
-        --section-padding: 60px;
+    header {
+        background: rgba(10, 10, 10, 0.98);
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--border-color);
     }
     
-    header {
-        background: rgba(0, 0, 0, 0.95);
+    .navbar {
+        height: 100%;
+        align-items: center;
     }
     
     .logo-container .logo {
@@ -1041,7 +1043,8 @@ footer {
     
     .logo-container .mobile-logo {
         display: block;
-        height: 35px;
+        height: 55px;
+        width: auto;
     }
     
     .nav-links {
@@ -1049,28 +1052,50 @@ footer {
         top: 70px;
         left: 0;
         right: 0;
-        background: var(--bg-darker);
+        background: var(--bg-card);
+        border-top: 1px solid var(--border-color);
         border-bottom: 1px solid var(--border-color);
         flex-direction: column;
-        padding: 2rem;
+        padding: 2rem 1.5rem;
         gap: 1.5rem;
         transform: translateY(-150%);
-        transition: transform 0.3s ease;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: var(--shadow-lg);
+        backdrop-filter: blur(20px);
     }
     
     .nav-links[data-visible="true"] {
         transform: translateY(0);
     }
     
+    .nav-links li a {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    
+    .nav-links .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+    
     .humburger {
         display: block;
         cursor: pointer;
         z-index: 1001;
+        padding: 0.5rem;
+        transition: transform 0.3s ease;
+    }
+    
+    .humburger:active {
+        transform: scale(0.95);
     }
     
     .humburger i {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         color: var(--text-primary);
+        transition: color 0.3s ease;
     }
     
     .humburger i[data-visible="false"] {
