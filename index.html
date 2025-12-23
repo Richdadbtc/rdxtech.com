@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portfolio</title>
+    <meta name="description" content="Christian Uchenna - Full-Stack Mobile Developer specializing in Flutter, fintech, telecom, and scalable consumer applications">
+    <meta name="keywords" content="Flutter Developer, Mobile Developer, Fintech, GetX, API Integration, Full-Stack Developer">
+    <meta name="author" content="Christian Uchenna">
+    <title>Christian Uchenna | Full-Stack Mobile Developer</title>
     <link rel="icon" href="./images/logo 2.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,244 +14,825 @@
 <body>
     <header>
         <div class="humburger">
-            <i class="fa-solid fa-bars-staggered"  data-visible="true"></i>
-            <i class="fa-solid fa-xmark"  data-visible="false"></i>
+            <i class="fa-solid fa-bars-staggered" data-visible="true"></i>
+            <i class="fa-solid fa-xmark" data-visible="false"></i>
         </div>
-      <nav class="container navbar">
-       
-        <img src="./images//logo.png" alt="logo" class="logo">
-        <img src="./images//logo 2.png" alt="logo" class="mobile-logo">
-        <ul class="nav-links"  data-visible="false">
-            <li><a href="#About">About me</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#portofolio">Portfolio</a></li>
-            <a class="btn" href="#contact">Contact Me</a>
-        </ul>
-      </nav>
+        <nav class="container navbar">
+            <div class="logo-container">
+                <img src="./images/logo.png" alt="Christian Uchenna" class="logo">
+                <img src="./images/logo 2.png" alt="CU" class="mobile-logo">
+            </div>
+            <ul class="nav-links" data-visible="false">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <a class="btn" href="#contact">Contact</a>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="hero ">
-            <div class="bg-img">
-                <img src="./images/bg.png" alt="">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
             </div>
-            <div class="hero-top container">
-                
-                <div class="content">
-                    
-                    <div class="info">
-                        <h1>Hi, I am</h1>
-                        
-                        <h2>Chris Uche</h2>
-                       <h6>Mobile-App Developer </h6>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="hero-label">Full-Stack Mobile Developer</p>
+                    <h1 class="hero-title">Building scalable mobile solutions for <span class="gradient-text">fintech & telecom</span></h1>
+                    <p class="hero-description">I ship production-ready Flutter apps with complex API integrations, real-time features, and enterprise-grade architecture. From consumer fintech to government systems.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                     </div>
-                    <div class="contact-me">
-                        <a href="https://api.whatsapp.com/send/?phone=2348147088231&text=Hello%20Chris,%20I%20would%20like%20to%20discuss%20a%20project&type=phone_number&app_absent=0
-                        " target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                       <a href="https://www.linkedin.com/in/christian-uchenna-581041189?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
-                        <a href="https://github.com/Richdadbtc" target="_blank"><i class="fa-brands fa-github" ></i></a>
+                    <div class="hero-social">
+                        <a href="https://github.com/Richdadbtc" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/christian-uchenna-581041189" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=2348147088231&text=Hello%20Christian,%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
-                    
                 </div>
-                
-                <div class="person-img">
-                    <img src="./images/person.png" alt="person">
+                <div class="hero-visual">
+                    <div class="code-preview">
+                        <div class="code-header">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <pre><code><span class="code-keyword">class</span> <span class="code-class">MobileEngineer</span> {
+  <span class="code-keyword">final</span> skills = [
+    <span class="code-string">'Flutter'</span>,
+    <span class="code-string">'GetX'</span>,
+    <span class="code-string">'REST APIs'</span>,
+    <span class="code-string">'Firebase'</span>,
+    <span class="code-string">'Node.js'</span>,
+  ];
+  
+  <span class="code-keyword">void</span> <span class="code-function">buildApps</span>() {
+    <span class="code-comment">// Ship real products</span>
+  }
+}</code></pre>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="BERRIES">
-            <h4>SUMMARY</h4>
-            <p>
-                As a highly skilled mobile app developer, I specialize in crafting seamless,
-                 high-performance applications that deliver exceptional user experiences. With a strong command of Flutter,
-                  alongside extensive experience in both Android and iOS native development,
-                 I have a proven track record of transforming innovative ideas into successful mobile solutions. 
-            </p>
-            <span>READ MORE</span>
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title">Product-focused engineer who ships</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">I'm Christian Uchenna, an IT Specialist and Mobile Software Engineer with 6+ years building production systems across fintech, telecom, cybersecurity, and enterprise platforms.</p>
+                        <p>I've led technical teams, architected mobile applications handling real money and sensitive data, and shipped products from early-stage startups to enterprise clients. My work combines <strong>hands-on engineering</strong> with <strong>strategic technical leadership</strong>.</p>
+                        <p>Currently serving as <strong>Technical Director at SEI Media Tech</strong>, I oversee product architecture and team coordination. Previously, I built high-performance fintech apps at Accessivo, led engineering teams at Nophlix Tech, and provided IT support for cybersecurity operations at Spytrac and enterprise systems at Unilever Nigeria.</p>
+                        <p>I specialize in Flutter development, REST API integrations, real-time features, and end-to-end product delivery. <strong>Google Certified</strong> in IT Support and Mobile App Development, I bring both deep technical expertise and proven leadership to every project.</p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>End-to-end mobile development</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Complex API integrations</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Fintech & payment systems</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Enterprise-scale architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="./images/person.png" alt="Christian Uchenna" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Technical Stack</span>
+                    <h2 class="section-title">Tools I use to build products</h2>
+                </div>
+                <div class="skills-grid">
+                    <!-- Mobile Development -->
+                    <div class="skill-category">
+                        <div class="category-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobile Development</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Flutter</span><span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">Dart</span><span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">GetX</span><span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">Provider/Riverpod</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Clean Architecture</span><span class="skill-level">Advanced</span></li>
+                        </ul>
+                    </div>
 
-        </section>
-        <section class="aboutme container " id="About">
-            <div class="header-info">
-                <h4>ABOUT ME</h4>
-                <p>Chris Uche is a seasoned mobile app developer with a passion for creating intuitive and user-centric applications. With a strong foundation in Flutter and experience in both Android and iOS development,
-                     Chris has a proven track record of delivering high-quality mobile solutions that meet client requirements and exceed user expectations.</p>
-                    <p>Chris specializes in developing responsive, cross-platform applications with a focus on performance, usability, and scalability. Whether it’s bringing a creative idea to life or optimizing an existing app,
-                         Chris leverages the latest technologies and best practices to deliver robust mobile experiences.</p>
-                    <h6>EXPLORE</h6>
-                    <img src="./images/separatorBlack 1.png" alt="">
-            </div>
-            <div class="grid-about">
-                <div class="development columns">
-                    <h6>DEVELOPMENT</h6>
-                    <p>I can design the site tailored to your needs and suggestions or create it from scratch,<br>
-                     providing consultation throughout the process.</p>
-                </div>
-                <div class="maintenance columns">
-                    <h6>MAINTENANCE</h6>
-                    <p> I can efficiently update and optimize your existing site while ensuring it continues to run smoothly <br>
-                        Whether you need design tweaks or technical support, I’m here to help.</p>
-                </div>
-            </div>
-            <img src="./images/separatorBlack 1.png" alt="">
-        </section>
-        <section class="skills container" id="Skills">
-            <div class="header-info">
-                <h4>SKILLS</h4>
-               
-            </div>
-            <div class="using-now ">
-                <h4>USING NOW:</h4>
-            <div class="grid-skills">
-                <div class="grid-item item1">
-                    <img src="./images/html.svg" alt="">
-                    <h6>HTML5</h6>
+                    <!-- Backend & APIs -->
+                    <div class="skill-category">
+                        <div class="category-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend & APIs</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">REST APIs</span><span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">Node.js / Express</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Firebase</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">MongoDB</span><span class="skill-level">Intermediate</span></li>
+                            <li><span class="skill-name">PostgreSQL</span><span class="skill-level">Intermediate</span></li>
+                        </ul>
+                    </div>
 
-                </div>
-                <div class="grid-item item2">
-                  <img src="./images/css.svg" alt="">
-                    <h6>Flutter</h6>
-                </div>
-                <div class="grid-item item3">
-                    <img src="./images/javascript.svg" alt="">
-                    <h6>JavaScript</h6>
-                </div>
-                <div class="grid-item item4">
-                    <img src="./images/react.svg" alt="">
-                    <h6>React</h6>
-                </div>
-                <div class="grid-item item5">
-                    <img src="./images/bootstrap-solid 1.png" alt="">
-                    <h6>Dart</h6>
-                </div>
-                <div  class="grid-item item6">
-                    <img src="./images/Git-Icon-1788C 1.png" alt="">
-                    <h6>Git</h6>
-                </div>
-            </div>
+                    <!-- Fintech & Integrations -->
+                    <div class="skill-category">
+                        <div class="category-icon"><i class="fas fa-credit-card"></i></div>
+                        <h3>Fintech & Integrations</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Payment Gateways</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Wallet Systems</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">KYC/KYB (NIN/BVN)</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Virtual Cards</span><span class="skill-level">Intermediate</span></li>
+                            <li><span class="skill-name">Crypto Integration</span><span class="skill-level">Intermediate</span></li>
+                        </ul>
+                    </div>
 
-            </div>
-            <div class="learning-now ">
-                <h4>LEARNING NOW:</h4>
-                <div class="grid-skills">
-                    <div class="grid-item item1">
-                        <img src="./images/nodejs.png" alt="">
-                        <h6>Node Js</h6>
-    
+                    <!-- Telecom & Communication -->
+                    <div class="skill-category">
+                        <div class="category-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h3>Telecom & Communication</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">eSIM Technology</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">VoIP/Calls</span><span class="skill-level">Intermediate</span></li>
+                            <li><span class="skill-name">SMS Integration</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Push Notifications</span><span class="skill-level">Expert</span></li>
+                        </ul>
                     </div>
-                    <div class="grid-item item2">
-                      <img src="./images/mongoDb.png" alt="">
-                        <h6>Mongo DB</h6>
+
+                    <!-- IT & Infrastructure -->
+                    <div class="skill-category">
+                        <div class="category-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3>IT & Infrastructure</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">IT Support</span><span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">Networking</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">System Maintenance</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Security Monitoring</span><span class="skill-level">Advanced</span></li>
+                        </ul>
                     </div>
-                    <div class="grid-item item3">
-                        <img src="./images/typscript.png" alt="">
-                        <h6>TypeScript</h6>
+
+                    <!-- Leadership & Product -->
+                    <div class="skill-category">
+                        <div class="category-icon"><i class="fas fa-users-cog"></i></div>
+                        <h3>Leadership & Product</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Technical Leadership</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Team Management</span><span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">UI/UX Implementation</span><span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">Agile/Scrum</span><span class="skill-level">Advanced</span></li>
+                        </ul>
                     </div>
                 </div>
-                
             </div>
-            <div class="other-skills ">
-                <h4>OTHER SKILLS:</h4>
-                <div class="grid-skills">
-                    <div class="grid-item item1">
-                        <img src="./images/eng.svg" alt="">
-                        <h6>Figma</h6>
-    
-                    </div>
-                    <div class="grid-item item2">
-                      <img src="./images/spanish.svg" alt="">
-                        <h6>Canva</h6>
-                    </div>
-                    <div class="grid-item item3">
-                        <img src="./images/c++.svg" alt="">
-                        <h6>C++</h6>
-                    </div>
-                </div>
-                
-            </div>
-           
         </section>
 
-        <section class="portfolio" id="portofolio">
-            <div class="header-img">
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Portfolio</span>
+                    <h2 class="section-title">Real products I've shipped</h2>
+                    <p class="section-description">From fintech wallets to government tracking systems — here's a selection of production apps handling real users and real business logic.</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1: Swiftcom -->
+                    <div class="project-card featured">
+                        <div class="project-image">
+                            <img src="./images/Project.png" alt="Swiftcom App" />
+                            <div class="project-overlay">
+                                <span class="project-tag">Featured</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Swiftcom</h3>
+                            <p class="project-type">eSIM Communication Platform</p>
+                            <p class="project-description">Full-featured communication app replacing physical SIM cards with eSIM technology. Includes wallet system, airtime/data purchases, bill payments, NIN/BVN KYC verification, and AI chatbot assistant.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>GetX</span>
+                                <span>REST APIs</span>
+                                <span>Firebase</span>
+                                <span>eSIM</span>
+                                <span>Payment Integration</span>
+                            </div>
+                            <div class="project-highlights">
+                                <div class="highlight"><i class="fas fa-check"></i> In-app calls & SMS</div>
+                                <div class="highlight"><i class="fas fa-check"></i> Wallet & payments</div>
+                                <div class="highlight"><i class="fas fa-check"></i> KYC verification</div>
+                                <div class="highlight"><i class="fas fa-check"></i> Admin dashboard</div>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> Case Study</a>
+                            </div>
+                        </div>
+                    </div>
 
-            </div>
-            <div class="grid-header">
-                <div class="info">
-                    <p>ALL</p>
-                    <p>CODED</p>
-                    <p>DESIGNED</p>
+                    <!-- Project 2: RD Exchange -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/Rectangle 17.png" alt="RD Exchange" />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">RD Exchange</h3>
+                            <p class="project-type">Crypto Vendor Application</p>
+                            <p class="project-description">Crypto trading platform with live price updates, secure wallet management, and real-time transaction processing.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>GetX</span>
+                                <span>WebSocket</span>
+                                <span>Crypto APIs</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Banking/Fintech App -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/Project (1).png" alt="Banking App" />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Fintech Banking App</h3>
+                            <p class="project-type">Digital Banking Solution</p>
+                            <p class="project-description">Complete banking app with virtual card issuance, P2P transfers, bank transfers, transaction history, and real-time push notifications.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>GetX</span>
+                                <span>Payment APIs</span>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Hotspot -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/Project (2).png" alt="Hotspot App" />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Hotspot</h3>
+                            <p class="project-type">Discipleship & Community Platform</p>
+                            <p class="project-description">120-day spiritual journey app with mentorship, small groups, courses, prayer features, and testimony wall. Built with clean architecture and offline support.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>GetX</span>
+                                <span>Local Storage</span>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Pocket Tasks -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/Project (3).png" alt="Pocket Tasks" />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Pocket Tasks</h3>
+                            <p class="project-type">Task Management App</p>
+                            <p class="project-description">Clean, minimal task manager with offline storage, advanced filtering, sorting, and intuitive UX. Built with clean architecture principles.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>Hive/SQLite</span>
+                                <span>Clean Architecture</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Richdadbtc" class="btn-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Government Tracking System -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/Project.png" alt="Government System" />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Government Tracking System</h3>
+                            <p class="project-type">Enterprise Identity Management</p>
+                            <p class="project-description">Large-scale identity tracking system for government use, integrating BVN, NIN, and phone number verification. Handles sensitive data with enterprise-grade security.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>Enterprise APIs</span>
+                                <span>Security</span>
+                                <span>Scalable Architecture</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-link"><i class="fas fa-lock"></i> NDA Protected</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="grid-port">
-                <div class="grid-col col1" >
+        </section>
+
+        <!-- Resume Section -->
+        <section class="resume" id="resume">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Experience</span>
+                    <h2 class="section-title">Professional background</h2>
                 </div>
-                <div class="grid-col col2" ></div>
-                <div class="grid-col col3" ></div>
-                <div class="grid-col col4" ></div>
-                <div class="grid-col col5" ></div>
-                <div class="grid-col col6" ></div>
-            </div>
-            <div class="grid-header">
-           
-                    <p>And many more to come!</p>
-           
+                <div class="resume-content">
+                    <div class="resume-summary">
+                        <h3>Summary</h3>
+                        <p>Full-stack mobile developer with proven experience building production apps for fintech, telecom, and enterprise clients. Specialized in Flutter/Dart with strong backend understanding and product mindset.</p>
+                        <a href="./images/Christian_Uchenna_Resume.pdf" class="btn btn-primary" download="Christian_Uchenna_Resume.pdf">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                    <div class="experience-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Full-Stack Mobile Developer</h4>
+                                <p class="timeline-company">Swiftcom</p>
+                                <p class="timeline-period">2023 - Present</p>
+                                <ul>
+                                    <li>Built complete eSIM communication platform from ground up</li>
+                                    <li>Integrated payment systems, KYC verification, and wallet features</li>
+                                    <li>Developed admin dashboard for system management</li>
+                                    <li>Implemented real-time features and push notifications</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Mobile Developer</h4>
+                                <p class="timeline-company">Fintech & Crypto Projects</p>
+                                <p class="timeline-period">2022 - 2023</p>
+                                <ul>
+                                    <li>Developed banking apps with virtual cards and P2P transfers</li>
+                                    <li>Built crypto trading platform with live price feeds</li>
+                                    <li>Integrated multiple payment gateways and APIs</li>
+                                    <li>Implemented secure authentication and transaction flows</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Flutter Developer</h4>
+                                <p class="timeline-company">Various Projects</p>
+                                <p class="timeline-period">2021 - 2022</p>
+                                <ul>
+                                    <li>Built consumer apps with clean architecture</li>
+                                    <li>Implemented offline-first features and local storage</li>
+                                    <li>Developed enterprise tracking systems</li>
+                                    <li>Created UI/UX implementations from Figma designs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="contact container" id="contact">
-            <div class="header-info">
-                <h4>CONTACT</h4>
-                <p>Tell us about that project <br>
-                    </p>
-                    <h6>EXPLORE</h6>
-                    <img src="./images/separatorBlack 1.png" alt="">
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title">Let's build something together</h2>
+                    <p class="section-description">Working on a fintech app, telecom platform, or need a reliable mobile engineer? Let's talk.</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:contact@rdxtech.com">contact@rdxtech.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-github"></i></div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/Richdadbtc" target="_blank">github.com/Richdadbtc</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/christian-uchenna-581041189" target="_blank">Christian Uchenna</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <a href="https://api.whatsapp.com/send/?phone=2348147088231&text=Hello%20Christian,%20I%20would%20like%20to%20discuss%20a%20project" target="_blank">Send Message</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
-            <form action="">
-                <input type="text" name="name" id="name" placeholder="ENTER YOUR NAME*">
-                <input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL*">
-                <input type="text" name="phone" id="phone" placeholder=" YOUR PHONE*">
-                <input type="text" name="comment" id="comment" placeholder="YOUR MESSAGE*">
-                <button>SUBMIT</button>
-            </form>
-         
         </section>
-      
     </main>
 
-    <footer >
-        <div class="container footer-info ">
-        <div class="scroll-up ">
-
-            <a href="#"><i class="fas fa-angle-up"></i></a>
-            <h6>BACK TO TOP</h6>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Christian Uchenna</h3>
+                    <p>Full-Stack Mobile Developer</p>
+                    <p class="footer-tagline">Building scalable mobile solutions for fintech & telecom</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://github.com/Richdadbtc" target="_blank">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/christian-uchenna-581041189" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://api.whatsapp.com/send/?phone=2348147088231" target="_blank">WhatsApp</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Christian Uchenna. All rights reserved.</p>
+                <div class="scroll-top">
+                    <a href="#home" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+                </div>
+            </div>
         </div>
-        <div class="social">
-            <a href="https://www.facebook.com/Richdadtech?mibextid=kFxxJD" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://github.com/Richdadbtc" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/officialrichdadmedia/" target="_blank"><i class="fab fa-instagram" ></i></a>
-            <a href="https://www.linkedin.com/in/christian-uchenna-581041189?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <p >&copy;  2024 RDX TECH.All rights reserved.</p>
-    </div>
         
     </footer>
     <script>
-        let navbar=document.querySelector(".nav-links")
-        let humbergur=document.querySelector(".humburger")
-        let icons=document.querySelectorAll("i")
-    
-        humbergur.addEventListener('click', function(event){
-           let isvible=navbar.getAttribute('data-visible');
-            if(isvible == 'true'){
-                navbar.setAttribute('data-visible','false');
-                icons[0].setAttribute('data-visible','true');
-                icons[1].setAttribute('data-visible','false')
+        'use strict';
+
+        // ===================================
+        // NAVBAR SCROLL EFFECTS
+        // ===================================
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
-            else
-            {
-                navbar.setAttribute('data-visible','true');
-                icons[0].setAttribute('data-visible','false');
-                icons[1].setAttribute('data-visible','true')
+        });
+
+        // ===================================
+        // MOBILE MENU TOGGLE
+        // ===================================
+        const navbar = document.querySelector('.nav-links');
+        const hamburger = document.querySelector('.humburger');
+        const icons = document.querySelectorAll('.humburger i');
+        
+        hamburger.addEventListener('click', () => {
+            const isVisible = navbar.getAttribute('data-visible');
+            
+            if (isVisible === 'true') {
+                navbar.setAttribute('data-visible', 'false');
+                icons[0].setAttribute('data-visible', 'true');
+                icons[1].setAttribute('data-visible', 'false');
+            } else {
+                navbar.setAttribute('data-visible', 'true');
+                icons[0].setAttribute('data-visible', 'false');
+                icons[1].setAttribute('data-visible', 'true');
             }
-        })
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    navbar.setAttribute('data-visible', 'false');
+                    icons[0].setAttribute('data-visible', 'true');
+                    icons[1].setAttribute('data-visible', 'false');
+                }
+            });
+        });
+
+        // ===================================
+        // INTERSECTION OBSERVER - FADE IN ANIMATIONS
+        // ===================================
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections for fade-in animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.about, .skills, .projects, .resume, .contact');
+            
+            fadeElements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(30px)';
+                element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(element);
+            });
+
+            // Add fade-in-visible class styling
+            const style = document.createElement('style');
+            style.textContent = `
+                .fade-in-visible {
+                    opacity: 1 !important;
+                    transform: translateY(0) !important;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+
+        // ===================================
+        // FORM SUBMISSION HANDLER
+        // ===================================
+        const contactForm = document.getElementById('contactForm');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const formData = new FormData(contactForm);
+                const data = {
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    subject: formData.get('subject'),
+                    message: formData.get('message')
+                };
+                
+                // Here you can integrate with a backend service or email API
+                console.log('Form submitted:', data);
+                
+                // Show success message
+                alert('Thank you for reaching out! I\'ll get back to you soon.');
+                contactForm.reset();
+            });
+        }
+
+        // ===================================
+        // SMOOTH SCROLL WITH OFFSET
+        // ===================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                
+                if (href !== '#' && href !== '') {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offsetTop = target.offsetTop - 80; // Account for fixed header
+                        
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // ===================================
+        // TYPING EFFECT FOR HERO (OPTIONAL)
+        // ===================================
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            
+            type();
+        }
+
+        // ===================================
+        // PROJECT CARD TILT EFFECT (OPTIONAL)
+        // ===================================
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+            });
+        });
+
+        // ===================================
+        // ACTIVE NAV LINK HIGHLIGHTING
+        // ===================================
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links li a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Add active link styling
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeStyle = document.createElement('style');
+            activeStyle.textContent = `
+                .nav-links li a.active {
+                    color: var(--text-primary);
+                }
+                .nav-links li a.active::after {
+                    width: 100%;
+                }
+            `;
+            document.head.appendChild(activeStyle);
+        });
+
+        // ===================================
+        // PERFORMANCE OPTIMIZATION
+        // ===================================
+        // Add loading state for images
+        document.querySelectorAll('img').forEach(img => {
+            img.loading = 'lazy';
+        });
+
+        // Console message for recruiters
+        console.log('%c👋 Hello, fellow developer!', 'font-size: 20px; font-weight: bold; color: #7c3aed;');
+        console.log('%cLike what you see? Let\'s connect!', 'font-size: 14px; color: #10b981;');
+        console.log('%c🔗 GitHub: https://github.com/Richdadbtc', 'font-size: 12px; color: #a3a3a3;');
+    </script>
+</body>
+</html> // PERFORMANCE OPTIMIZATION
+        // ===================================
+        // Add loading state for images
+        document.querySelectorAll('img').forEach(img => {
+            img.loading = 'lazy';
+        });
+
+        // Console message for recruiters
+        console.log('%c👋 Hello, fellow developer!', 'font-size: 20px; font-weight: bold; color: #7c3aed;');
+        console.log('%cLike what you see? Let\'s connect!', 'font-size: 14px; color: #10b981;');
+        console.log('%c🔗 GitHub: https://github.com/Richdadbtc', 'font-size: 12px; color: #a3a3a3;');
+    </script>
+</body>
+</html> // PERFORMANCE OPTIMIZATION
+        // ===================================
+        // Add loading state for images
+        document.querySelectorAll('img').forEach(img => {
+            img.loading = 'lazy';
+        });
+
+        // Console message for recruiters
+        console.log('%c👋 Hello, fellow developer!', 'font-size: 20px; font-weight: bold; color: #7c3aed;');
+        console.log('%cLike what you see? Let\'s connect!', 'font-size: 14px; color: #10b981;');
+        console.log('%c🔗 GitHub: https://github.com/Richdadbtc', 'font-size: 12px; color: #a3a3a3;');
+    </script>
+</body>
+</html>         const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+            });
+        });
+
+        // ===================================
+        // ACTIVE NAV LINK HIGHLIGHTING
+        // ===================================
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links li a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Add active link styling
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeStyle = document.createElement('style');
+            activeStyle.textContent = `
+                .nav-links li a.active {
+                    color: var(--text-primary);
+                }
+                .nav-links li a.active::after {
+                    width: 100%;
+                }
+            `;
+            document.head.appendChild(activeStyle);
+        });
+
+        // ===================================
+        // PERFORMANCE OPTIMIZATION
+        // ===================================
+        // Add loading state for images
+        document.querySelectorAll('img').forEach(img => {
+            img.loading = 'lazy';
+        });
+
+        // Console message for recruiters
+        console.log('%c👋 Hello, fellow developer!', 'font-size: 20px; font-weight: bold; color: #7c3aed;');
+        console.log('%cLike what you see? Let\'s connect!', 'font-size: 14px; color: #10b981;');
+        console.log('%c🔗 GitHub: https://github.com/Richdadbtc', 'font-size: 12px; color: #a3a3a3;');
     </script>
 </body>
 </html>
