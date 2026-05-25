@@ -1132,6 +1132,10 @@ footer {
         height: 55px;
         width: auto;
     }
+
+    .hamburger {
+        order: -1;
+    }
     
     .nav-links {
         position: fixed;
