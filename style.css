@@ -210,7 +210,7 @@ header.scrolled {
     background: rgba(124, 58, 237, 0.1);
 }
 
-.humburger {
+.hamburger {
     display: none;
 }
 
@@ -998,6 +998,87 @@ footer {
 }
 
 /* ===================================
+   ABOUT — STATS ROW
+   =================================== */
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* ===================================
+   ABOUT — CERTIFICATIONS
+   =================================== */
+.certifications {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.cert-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.9rem;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+/* ===================================
+   CONTACT FORM — FEEDBACK MESSAGE
+   =================================== */
+.form-message {
+    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    display: none;
+}
+
+.form-message.success {
+    display: block;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: var(--secondary);
+}
+
+.form-message.error {
+    display: block;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #f87171;
+}
+
+/* ===================================
    RESPONSIVE DESIGN
    =================================== */
 
@@ -1080,7 +1161,7 @@ footer {
         font-size: 1.1rem;
     }
     
-    .humburger {
+    .hamburger {
         display: block;
         cursor: pointer;
         z-index: 1001;
@@ -1088,17 +1169,17 @@ footer {
         transition: transform 0.3s ease;
     }
     
-    .humburger:active {
+    .hamburger:active {
         transform: scale(0.95);
     }
     
-    .humburger i {
+    .hamburger i {
         font-size: 1.8rem;
         color: var(--text-primary);
         transition: color 0.3s ease;
     }
     
-    .humburger i[data-visible="false"] {
+    .hamburger i[data-visible="false"] {
         display: none;
     }
     
@@ -1139,8 +1220,12 @@ footer {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
