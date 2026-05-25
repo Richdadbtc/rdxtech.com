@@ -214,6 +214,11 @@ header.scrolled {
     display: none;
 }
 
+/* X icon always hidden until menu opens */
+.hamburger .fa-xmark {
+    display: none;
+}
+
 /* ===================================
    HERO SECTION
    =================================== */
@@ -1176,11 +1181,15 @@ footer {
     .hamburger i {
         font-size: 1.8rem;
         color: var(--text-primary);
-        transition: color 0.3s ease;
+        transition: all 0.3s ease;
     }
-    
-    .hamburger i[data-visible="false"] {
+
+    .hamburger.open .fa-bars-staggered {
         display: none;
+    }
+
+    .hamburger.open .fa-xmark {
+        display: block;
     }
     
     .hero-content {

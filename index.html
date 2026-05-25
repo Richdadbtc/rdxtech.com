@@ -38,8 +38,8 @@
                 <li><a class="btn" href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
-                <i class="fa-solid fa-bars-staggered" data-visible="true"></i>
-                <i class="fa-solid fa-xmark" data-visible="false"></i>
+                <i class="fa-solid fa-bars-staggered"></i>
+                <i class="fa-solid fa-xmark"></i>
             </div>
         </nav>
     </header>
@@ -558,40 +558,30 @@
         // ===================================
         const navbar = document.querySelector('.nav-links');
         const hamburger = document.querySelector('.hamburger');
-        const icons = document.querySelectorAll('.hamburger i');
+
+        function openMenu() {
+            navbar.setAttribute('data-visible', 'true');
+            hamburger.classList.add('open');
+        }
+
+        function closeMenu() {
+            navbar.setAttribute('data-visible', 'false');
+            hamburger.classList.remove('open');
+        }
 
         hamburger.addEventListener('click', () => {
-            const isVisible = navbar.getAttribute('data-visible');
-            if (isVisible === 'true') {
-                navbar.setAttribute('data-visible', 'false');
-                icons[0].setAttribute('data-visible', 'true');
-                icons[1].setAttribute('data-visible', 'false');
-            } else {
-                navbar.setAttribute('data-visible', 'true');
-                icons[0].setAttribute('data-visible', 'false');
-                icons[1].setAttribute('data-visible', 'true');
-            }
+            navbar.getAttribute('data-visible') === 'true' ? closeMenu() : openMenu();
         });
 
-        // Close mobile menu when clicking a nav link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
-                if (window.innerWidth <= 768) {
-                    navbar.setAttribute('data-visible', 'false');
-                    icons[0].setAttribute('data-visible', 'true');
-                    icons[1].setAttribute('data-visible', 'false');
-                }
+                if (window.innerWidth <= 768) closeMenu();
             });
         });
 
-        // Close mobile menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!hamburger.contains(e.target) && !navbar.contains(e.target)) {
-                if (navbar.getAttribute('data-visible') === 'true') {
-                    navbar.setAttribute('data-visible', 'false');
-                    icons[0].setAttribute('data-visible', 'true');
-                    icons[1].setAttribute('data-visible', 'false');
-                }
+                closeMenu();
             }
         });
 
